@@ -9,33 +9,33 @@ class ComponenteCard extends React.Component{
         };
       }
       buttonClick = (event) => {
-           if (this.state.defaultClass === "card"){
-               this.setState({
-           defaultClass: "card card-change"
-         })
-           } else {
-             this.setState({
-                 defaultClass: "card"
-               })
-           }
-        // const Default = this.state.defaultClass
-        // this.setState({
-        //     Default ? Default === "card card-change" : 'card'
-        //   });
-      
+        //    if (this.state.defaultClass === "card"){
+        //        this.setState({
+        //    defaultClass: "card card-change"
+        //  })
+        //    } else {
+        //      this.setState({
+        //          defaultClass: "card"
+        //        })
+        //    }
+
+           this.state.defaultClass === "card" 
+           ? this.setState({ defaultClass: "card card-change"}) 
+           : this.setState({ defaultClass: "card"})
+  
       }
     render() {
         const {defaultClass} = this.state
     return (
     <section id="card-container">
         <div className={defaultClass}>
-            <h1>Título</h1>
-            <p>
+            <h1 className="card__title">Título</h1>
+            <p className="card__description">
             Used in casting shadows (often called “Drop Shadows”, 
             like in Photoshop) from elements. Here is an example 
             with the deepest possible browser support:
             </p>
-            <button onClick={this.buttonClick}>
+            <button className="card__button" onClick={this.buttonClick}>
                 Conhecer
             </button>
         </div>

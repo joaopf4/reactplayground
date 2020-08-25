@@ -1,4 +1,3 @@
-
 .card {
     height: 400px;
     width: 300px;
@@ -11,15 +10,15 @@
     color: #A0A0A0;
     padding: 30px;
 }
-.card h1 {
+.card__title {
     margin: 30px auto 0px;
     font-size: 50px;
 }
-.card p {
+.card__description {
     text-align: center;
     margin: 50% 0px 8%;
 }
-.card button {
+.card__button {
     border-radius: 6px;
     padding: 10px 0px;
     color: white;
@@ -28,10 +27,10 @@
     background-color: #3eb5a2;
     border-style: none;
 }    
-.card button:hover{
+.card__button:hover{
     background-color: #79e5d3;
 }
-.card button:active{
+.card__button:active{
     background-color: #2b7a6c;
     outline: none;
 }
