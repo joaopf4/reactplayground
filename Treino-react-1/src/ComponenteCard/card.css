@@ -3,21 +3,42 @@
     width: 300px;
     display: flex;
     flex-direction: column;
-    background-color: white;
     border-radius: 8px;
     box-shadow: 3px 3px 5px 6px #ccc;
     margin: 30px 0px 80px;
-    color: #A0A0A0;
     padding: 30px;
 }
+.card--primary {
+    background-color: white;
+    color: #A0A0A0;
+}
+.card--blue {
+    background-color:#0F4C75;
+    color: #00B7C2;
+}
+
 .card__title {
     margin: 30px auto 0px;
     font-size: 50px;
 }
+.card__title--prymary {
+    color: #A0A0A0;
+}
+.card__title--blue {
+    color: #00B7C2;
+}
+
 .card__description {
     text-align: center;
     margin: 50% 0px 8%;
 }
+.card__description--primary {
+    color: #A0A0A0;
+}
+.card__description--blue {
+    color: #00B7C2;
+}
+
 .card__button {
     border-radius: 6px;
     padding: 10px 0px;
@@ -34,10 +55,7 @@
     background-color: #2b7a6c;
     outline: none;
 }
-.card-change {
-    background-color:#0F4C75;
-    color: #00B7C2;
-}
+
 
 #card-container {
     display: flex;

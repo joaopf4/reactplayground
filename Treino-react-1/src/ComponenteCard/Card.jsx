@@ -5,7 +5,7 @@ class ComponenteCard extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            defaultClass: "card"
+            defaultClass: "card card--primary"
         };
       }
       buttonClick = (event) => {
@@ -29,8 +29,8 @@ class ComponenteCard extends React.Component{
     return (
     <section id="card-container">
         <div className={defaultClass}>
-            <h1 className="card__title">Título</h1>
-            <p className="card__description">
+            <h1 className="card__title card__title--prymary">Título</h1>
+            <p className="card__description card__description--primary ">
             Used in casting shadows (often called “Drop Shadows”, 
             like in Photoshop) from elements. Here is an example 
             with the deepest possible browser support:
