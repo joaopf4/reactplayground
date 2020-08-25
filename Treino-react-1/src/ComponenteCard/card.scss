@@ -1,0 +1,76 @@
+$base-blue: #00B7C2;
+$primary: #A0A0A0;
+
+.card {
+    height: 400px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    margin: 30px 0px 80px;
+    padding: 30px;
+
+    &--primary {
+        background-color: white;
+        color: #A0A0A0;
+    }
+
+    &--blue {
+        background-color:#0F4C75;
+        color: $base-blue;
+    }
+
+    &__title {
+        margin: 30px auto 0px;
+        font-size: 50px;
+
+        &--prymary {
+            color: #A0A0A0;
+        }
+
+        &--blue {
+            color: $base-blue;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        margin: 50% 0px 8%;
+
+        &--primary {
+            color: #A0A0A0;
+        }
+        &--blue {
+            color: $base-blue;
+        }
+    }
+
+    &__button {
+        border-radius: 6px;
+        padding: 10px 0px;
+        color: white;
+        font-weight: 800;
+        cursor: pointer;
+        background-color: #3eb5a2;
+        border-style: none;
+
+        &:hover{
+            background-color: #79e5d3;
+        }
+
+        &:active{
+            background-color: #2b7a6c;
+            outline: none;
+        }
+    }    
+}
+
+
+
+#card-container {
+    display: flex;
+    justify-content: center;
+}
+    
+    

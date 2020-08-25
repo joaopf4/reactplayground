@@ -1,36 +1,39 @@
 import React from 'react';
-import './card.css';
+import './card.scss';
 
 class ComponenteCard extends React.Component{
     constructor(props) {
         super(props);
         this.state = {
-            defaultClass: "card card--primary"
+            color: 0,
+            colorOrder: ["primary", "blue"]
         };
       }
-      buttonClick = (event) => {
-        //    if (this.state.defaultClass === "card"){
-        //        this.setState({
-        //    defaultClass: "card card-change"
-        //  })
-        //    } else {
-        //      this.setState({
-        //          defaultClass: "card"
-        //        })
-        //    }
+      buttonClick = () => {
+        // this.state.color === "primary" 
+        // ? this.setState({ color: "blue"}) 
+        // : this.setState({ color: "primary"})
+        
+        if(this.state.color >= 1){
+            this.setState({
+                color: 0
+            })
+        }else {
+            this.setState((state) => ({
+            color: state.color + 1
+          }));   
+        }
 
-           this.state.defaultClass === "card" 
-           ? this.setState({ defaultClass: "card card-change"}) 
-           : this.setState({ defaultClass: "card"})
   
       }
     render() {
-        const {defaultClass} = this.state
+        const {colorOrder, color} = this.state
+        const currentColor = colorOrder[color]
     return (
     <section id="card-container">
-        <div className="card card--primary">
-            <h1 className="card__title card__title--primary">Título</h1>
-            <p className="card__description card__description--primary ">
+        <div className={`card card--${currentColor}`}>
+            <h1 className={`card__title card__title--${currentColor}`}>Título</h1>
+            <p className={`card__description card__description--${currentColor}`}>
             Used in casting shadows (often called “Drop Shadows”, 
             like in Photoshop) from elements. Here is an example 
             with the deepest possible browser support:
