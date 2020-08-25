@@ -28,8 +28,8 @@ class ComponenteCard extends React.Component{
         const {defaultClass} = this.state
     return (
     <section id="card-container">
-        <div className={defaultClass}>
-            <h1 className="card__title card__title--prymary">Título</h1>
+        <div className="card card--primary">
+            <h1 className="card__title card__title--primary">Título</h1>
             <p className="card__description card__description--primary ">
             Used in casting shadows (often called “Drop Shadows”, 
             like in Photoshop) from elements. Here is an example 
