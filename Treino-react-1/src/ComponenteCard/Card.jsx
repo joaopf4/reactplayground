@@ -6,7 +6,7 @@ class ComponenteCard extends React.Component{
         super(props);
         this.state = {
             color: 0,
-            colorOrder: ["primary", "blue"]
+            colorOrder: ["primary", "blue", "orange"]
         };
       }
       buttonClick = () => {
@@ -14,7 +14,7 @@ class ComponenteCard extends React.Component{
         // ? this.setState({ color: "blue"}) 
         // : this.setState({ color: "primary"})
         
-        if(this.state.color >= 1){
+        if(this.state.color >= 2){
             this.setState({
                 color: 0
             })

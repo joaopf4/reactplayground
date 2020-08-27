@@ -1,5 +1,6 @@
 $base-blue: #00B7C2;
 $primary: #A0A0A0;
+$base-orange: #800000;
 
 .card {
     height: 400px;
@@ -13,12 +14,15 @@ $primary: #A0A0A0;
 
     &--primary {
         background-color: white;
-        color: #A0A0A0;
+        color: $primary;
     }
-
     &--blue {
         background-color:#0F4C75;
         color: $base-blue;
+    }
+    &--orange {
+        background-color:#ff8b65;
+        color: $base-orange;
     }
 
     &__title {
@@ -26,11 +30,13 @@ $primary: #A0A0A0;
         font-size: 50px;
 
         &--prymary {
-            color: #A0A0A0;
+            color: $primary;
         }
-
         &--blue {
             color: $base-blue;
+        }
+        &--orange {
+            color: $base-orange;
         }
     }
 
@@ -39,10 +45,13 @@ $primary: #A0A0A0;
         margin: 50% 0px 8%;
 
         &--primary {
-            color: #A0A0A0;
+            color: $primary;
         }
         &--blue {
             color: $base-blue;
+        }
+        &--orange {
+            color: $base-orange;
         }
     }
 
